@@ -1,0 +1,4 @@
+[11-Oct-2020 09:28:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rn53tbdj/public_html/directoryfinder.net/client/carlos/admin/config/config.php on line 171
+[11-Oct-2020 09:28:22 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rn53tbdj/public_html/directoryfinder.net/client/carlos/admin/config/config.php on line 173
+[11-Oct-2020 09:28:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rn53tbdj/public_html/directoryfinder.net/client/carlos/admin/config/config.php on line 171
+[11-Oct-2020 09:28:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rn53tbdj/public_html/directoryfinder.net/client/carlos/admin/config/config.php on line 173

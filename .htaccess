@@ -1,0 +1,46 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteRule ^anuncios/(.*)$ all-listing.php?select_cate=$1&select_city=$2&select_state=$3 [QSA]
+RewriteRule ^anuncios/(.*) all-listing.php?select_cate=$1&select_city=$2 [QSA]
+RewriteRule ^anuncios/(.*) all-listing.php?select_cate=$1 [QSA]
+RewriteRule ^anuncios/ all-listing.php [QSA]
+RewriteRule ^anuncios all-listing.php [QSA]
+RewriteRule ^anuncio/(.*)$ listing-details.php?code=$1 [QSA]
+RewriteRule ^profesional/(.*) profile.php [QSA]
+RewriteRule ^login$ login.php [QSA]
+RewriteRule ^register_update$ register_update.php [QSA]
+RewriteRule ^comunidad-negocios community.php [QSA]
+RewriteRule ^blog/(.*)$ blog-details.php?row=$1 [QSA]
+RewriteRule ^blog-posts blog-posts.php [QSA]
+RewriteRule ^ofertas-trabajo/(.*)$ all-work-offers.php?select_cate=$1&select_city=$2&select_state=$3 [QSA]
+RewriteRule ^ofertas-trabajo/(.*) all-work-offers.php?select_cate=$1&select_city=$2 [QSA]
+RewriteRule ^ofertas-trabajo/(.*) all-work-offers.php?select_cate=$1 [QSA]
+RewriteRule ^ofertas-trabajo/ all-work-offers.php [QSA]
+RewriteRule ^ofertas-trabajo all-work-offers.php [QSA]
+RewriteRule ^oferta-trabajo/(.*)$ work-offer-details.php?row=$1 [QSA]
+RewriteRule ^todas-categorias$ all-category.php?row=$1 [QSA]
+RewriteRule ^todas-categorias-ofertas-trabajo$ all-category-workoffer.php?row=$1 [QSA]
+RewriteRule ^almacenes/(.*)$ all-stores.php?select_cate=$1&select_city=$2&select_state=$3 [QSA]
+RewriteRule ^almacenes/(.*) all-stores.php?select_cate=$1&select_city=$2 [QSA]
+RewriteRule ^almacenes/(.*) all-stores.php?select_cate=$1 [QSA]
+RewriteRule ^almacenes/ all-stores.php [QSA]
+RewriteRule ^almacenes all-stores.php [QSA]
+RewriteRule ^almacen/(.*)$ store-details.php?row=$1 [QSA]
+RewriteRule ^todas-categorias-almacenes$ all-category-store.php?row=$1 [QSA]
+RewriteRule ^evento/(.*)$ event-details.php?row=$1 [QSA]
+RewriteRule ^eventos events.php [QSA]
+RewriteRule aviso-legal aviso-legal.php [QSA]
+RewriteRule contacto contact-us.php [QSA]
+RewriteRule condiciones-uso condiciones-uso.php [QSA]
+RewriteRule politica-privacidad politica-privacidad.php [QSA]
+RewriteRule condiciones-servicios condiciones-servicios.php [QSA]
+RewriteRule politica-cookies politica-cookies.php [QSA]
+RewriteRule nuestro-compromiso nuestro-compromiso.php [QSA]
+RewriteRule nuestro-compromiso nuestro-compromiso.php [QSA]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+
+
