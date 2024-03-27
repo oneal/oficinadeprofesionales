@@ -8463,7 +8463,7 @@ background: url('../images/all-product-bg.jpg') no-repeat #5085f7;
 .con-pg-soc ul li:before{content: '';position: absolute;width: 20px;height: 20px;background-repeat: no-repeat;background-size: cover;}
 .con-pg-soc ul li.ic-man-web:before{background-image: url(../images/icon/ic-6.png);}
 .con-pg-soc ul li.ic-man-fb:before{background-image: url(../images/icon/facebook.png);}
-.con-pg-soc ul li.ic-man-tw:before{background-image: url(../images/icon/twitter.png);}
+.con-pg-soc ul li.ic-man-tw:before{background-image: url(../images/social/2.png);}
 .con-pg-soc ul li.ic-man-ld:before{background-image: url(../images/icon/linkedin.png);}
 .con-pg-soc ul li.ic-man-youtube:before{background-image: url(../images/icon/youtube.png);}
 .con-pg-soc ul li.ic-man-whatsapp:before{background-image: url(../images/icon/whatsapp.png);}
