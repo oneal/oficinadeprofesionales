@@ -441,9 +441,9 @@ if (isset($_GET['select_cate'])) {
                                     $work_offer_code = $workofferrow['work_offer_code'];
                                     $listing_id = $workofferrow['work_offer_id'];
                                     $list_user_id = $workofferrow['user_id'];
-                                    $category_id = $workofferrow['category_id'];
+                                    $category_work_offer_id = $workofferrow['category_id'];
 
-                                    $category_a_row = getCategoryWokrOffer($category_id);
+                                    $category_a_row = getCategoryWokrOffer($category_work_offer_id);
 
                                     $usersqlrow = getUser($list_user_id); // To Fetch particular User Data
 
@@ -920,6 +920,7 @@ include "modal_politca_privacidad_consigue_cita.php";
 <script>
     <?php foreach (getAllWorkOffers() as $rowq){ ?>
     $('.qvv<?php echo $rowq['work_offer_code'] ?>').on('click', function () {
+        $('.list-qview').removeClass('qview-show');
         $('.list-qview<?php echo $rowq['work_offer_code'] ?>').addClass('qview-show');
     });
     $('.list-qview<?php echo $rowq['work_offer_code'] ?>').on('mouseleave', function () {

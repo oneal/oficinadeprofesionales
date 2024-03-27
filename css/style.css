@@ -775,7 +775,6 @@ div#event_detail_enq_success p{
     /* animation: animatedBackground 150s linear infinite; */
     position: relative;
     margin-bottom: 50px;
-
 }
 @keyframes animatedBackground {
     from{background-position:0 0}
@@ -9858,12 +9857,7 @@ span.email-destacado:before {
     .hom-mpop .col-md-3, .hom-mpop .col-md-9 {
         max-width: 100%;
     }
-    .hom-head {
-        padding: 80px 0px 20px 0px;
-        background-size: auto;
-        background-position: bottom;
-        background-image: none !important;
-    }
+
     .ban-tit{
         top: 0;
         margin-bottom: 24px;
@@ -9891,7 +9885,10 @@ span.email-destacado:before {
     .ban-search ul li.sr-btn{width:100%; margin-top: 15px;}
     .hom-ads .ads-box img{    object-fit: contain;    height: auto;}
     .hom-head{
-        padding: 81px 0px 96px 0px;margin-bottom: 0px;background-position: bottom;
+        padding: 81px 0px 96px 0px;
+        margin-bottom: 0px;
+        background-position: top;
+        background-image: url('../images/679305551554468man-sitting-on-bench-having-a-cup-of-coffee-374044-m.jpg') !important;
     }
     .ban-ql{margin-bottom: 0px; padding-top: 10px;    margin-top: 30px;   padding-bottom: 30px;}
     .ban-ql ul li div{/* width: 145px; */padding: 20px 10px;}
@@ -10242,8 +10239,8 @@ span.email-destacado:before {
     .hom-head {
         padding: 80px 0px 20px 0px;
         background-size: auto;
-        background-position: bottom;
-        background-image: none !important;
+        background-position: 50% 10%;
+        background-image: url('../images/679305551554468man-sitting-on-bench-having-a-cup-of-coffee-374044-m.jpg') !important;
     }
     .ban-tit{
         top: 0;
@@ -10765,10 +10762,6 @@ span.email-destacado:before {
     }
 }
 @media screen and (max-width:480px){
-    .hom-head{
-        background-image: none !important;
-    }
-
     .land-pack ul li {
         width: 100%;
     }
