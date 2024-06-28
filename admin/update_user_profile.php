@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($result) {
             $user_row = getUser($user_id);
-            if($user_type == 'Service provider' and $user_row['send_email'] == 0){
+            if(($user_type == 'Service provider' || $user_type == 'Service provider store' || $user_type == 'Store')  and $user_row['send_email'] == 0){
                 $admin_primary_email_fetch = mysqli_query($conn,"SELECT * FROM " . TBL . "footer  WHERE footer_id = '1' ");
                 $admin_primary_email_fetchrow = mysqli_fetch_array($admin_primary_email_fetch);
                 $admin_primary_email = $admin_primary_email_fetchrow['admin_primary_email'];

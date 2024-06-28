@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-svg-lib/tests/Svg" isTestSource="true" packagePrefix="Svg\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/src" isTestSource="false" packagePrefix="Dompdf\" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/tests" isTestSource="true" packagePrefix="Dompdf\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/dompdf/tests" isTestSource="true" packagePrefix="Dompdf\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/dompdf/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/dompdf/vendor/doctrine/instantiator" />

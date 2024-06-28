@@ -13,6 +13,7 @@ $(".city_check, .sub_cat_check ,.discount_check, .price_check").on( "click", pro
 $("select").on( "change", productFilter );
 
 
+
 function productFilter() {
 
     $(".all-product-total").css("opacity",0);

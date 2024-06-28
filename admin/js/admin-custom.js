@@ -11,6 +11,7 @@ $(document).ready(function () {
             $(this).addClass('mact');
             $(this).siblings().slideDown();
         }
+
     });
     $('.mopen').on('click', function () {
         $(this).fadeOut();
@@ -71,7 +72,15 @@ $(document).ready(function () {
     //LISTING CATEGORY REMOVE - APPEND
     $(".cate-rem-btn").click(function () {
         $(".add-ncate ul li:last-child").remove();
+    })
+    //LISTING OFFER ADD - APPEND
+    $(".offer-add-btn").click(function () {
+        $(".add-noffer ul li:last-child").after('<li><div class="row"><div class="col-md-6 col-sm-12"><div class="form-group"><label>Expecificación</label><input type="text" id="details_id" name="details_id[]" class="form-control" placeholder="Expedificacion"></div> </div><div class="col-md-6 col-sm-12"><div class="form-group"><label>Valor</label><input type="text" id="details_text" name="details_text[]" class="form-control" placeholder="Valor"></div></div></div></li>');
     });
+    //LISTING OFFER REMOVE - APPEND
+    $(".offer-rem-btn").click(function () {
+        $(".add-noffer ul li:last-child").remove();
+    })
     //COUNTRY ADD - APPEND
     $(".count-add-btn").click(function () {
         $(".add-ncate ul li:last-child").after('<li> <div class="row"> <div class="col-md-12"> <div class="form-group"> <input type="text" class="form-control" name="country_name[]" placeholder="Region name *" required> </div> </div> </div> </li>');

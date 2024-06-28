@@ -230,6 +230,14 @@ $(document).ready(function () {
     $(".lis-add-orevideo").on('click', function () {
         $(".add-list-map ul li:last-child").remove();
     });
+    //LISTING OFFER ADD - APPEND
+    $(".offer-add-btn").click(function () {
+        $(".add-noffer ul li:last-child").after('<li><div class="row"><div class="col-md-6 col-sm-12"><div class="form-group"><label>Expecificación</label><input type="text" id="details_id" name="details_id[]" class="form-control" placeholder="Expedificacion"></div> </div><div class="col-md-6 col-sm-12"><div class="form-group"><label>Valor</label><input type="text" id="details_text" name="details_text[]" class="form-control" placeholder="Valor"></div></div></div></li>');
+    });
+    //LISTING OFFER REMOVE - APPEND
+    $(".offer-rem-btn").click(function () {
+        $(".add-noffer ul li:last-child").remove();
+    })
 
     //ENQUIRY AND REVIEW LIKE
     // $(".enq-sav i").click(function(){
@@ -820,23 +828,44 @@ jQuery(document).ready(function ($) {
         var select_city = $("#select-city").val();
         var select_state = $("#select-state").val();
         var select_cate = $("#select-cate").val();
-
+        var select_text = $("#select-text").val();
+        var urlweb = host+dir+"almacenes/";
+        var url = "";
         if(select_cate!="" && select_state!="" && select_city!=""){
-            window.location.href = host+dir+"almacenes/" + select_cate+"/" + select_city + "/" + select_state;
+            url =  urlweb + select_cate+"/" + select_city + "/" + select_state;
         }
 
         if(select_cate!="" && select_state!="" && select_city==""){
-            window.location.href = host+dir+"almacenes/" + select_cate + "/" + select_state;
+            url = urlweb + select_cate + "/" + select_state;
         }
 
         if(select_cate!="" && select_state=="" && select_city==""){
-            window.location.href = host+dir+"almacenes/" + select_cate;
+            url = urlweb + select_cate;
         }
 
         if(select_cate=="" && select_state=="" && select_city==""){
-            window.location.href = host+dir+"almacenes";
+            url = urlweb;
         }
 
+        if(select_text !== ""){
+            url += "?s="+select_text
+        }
+
+        window.location.href = url;
+    });
+
+    $('#filter_submit_offer_store').click(function () {
+        var select_text = $("#select-text").val();
+        var urlweb = host+dir+"todas-ofertas-almacenes";
+        var url = "";
+
+        if(select_text != ""){
+            url = urlweb+"?s="+select_text
+        } else {
+            url = urlweb;
+        }
+
+        window.location.href = url;
     });
 });
 //Header Page Search Box Process Ends

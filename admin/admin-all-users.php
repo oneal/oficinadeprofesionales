@@ -122,8 +122,8 @@ include "header.php";
 <script src="../js/jquery.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/jquery-ui.js"></script>
-<script src="js/admin-custom.js"></script> 
+<script src="../js/jquery-ui.min.js"></script>
+<script src="js/admin-custom.min.js"></script>
 <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
 </body>
 

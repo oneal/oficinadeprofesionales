@@ -174,7 +174,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
             if($user_type === "Service provider"){
                 $user_status = "Inactive";
-            } else if($user_type === "General"){
+            } else if($user_type === "Service provider store") {
+                $user_status = "Inactive";
+            }else if($user_type === 'Store'){
+                $user_status = "Inactive";
+            } else if($user_type === "General") {
                 $user_status = "Active";
             } else if($user_type === 'Prueba'){
                 $user_status = "Inactive";
@@ -308,7 +312,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $webpage_full_link_with_login = $webpage_full_link. "verification_user?row=".$user_code;  //URL Login Link
 
     //****************************    Admin email starts    *************************
-                if($user_type == "Service provider"){
+                if($user_type == "Service provider" || $user_type == "Service provider store" || $user_type == "Stores"){
                     $to = $admin_email;
                     $subject = $admin_site_name." - ".$BIZBOOK['NEW_REGISTER'];
 

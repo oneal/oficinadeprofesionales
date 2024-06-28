@@ -10,6 +10,7 @@ $(".city_check, .sub_cat_check ,.rating_check, .feature_check").on( "click", lis
 $("select").on( "change", listingFilter );
 
 
+
 function listingFilter() {
 
     $(".all-listing-total").css("opacity",0);

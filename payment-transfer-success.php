@@ -51,11 +51,11 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/select-opt.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/select-opt.min.js"></script>
+<script src="js/custom.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
-<script src="js/custom_validation.js"></script>
+<script src="js/custom_validation.min.js"></script>
 </body>
 
 </html>

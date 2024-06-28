@@ -137,10 +137,10 @@ include "footer.php";
 <script src="<?php echo $slash;?>js/jquery.min.js"></script>
 <script src="<?php echo $slash;?>js/popper.min.js"></script>
 <script src="<?php echo $slash;?>js/bootstrap.min.js"></script>
-<script src="<?php echo $slash;?>js/jquery-ui.js"></script>
-<script src="<?php echo $slash;?>js/custom.js"></script>
+<script src="<?php echo $slash;?>js/jquery-ui.min.js"></script>
+<script src="<?php echo $slash;?>js/custom.min.js"></script>
 <script src="<?php echo $slash;?>js/jquery.validate.min.js"></script>
-<script src="<?php echo $slash;?>js/custom_validation.js"></script>
+<script src="<?php echo $slash;?>js/custom_validation.min.js"></script>
 </body>
 
 </html>
