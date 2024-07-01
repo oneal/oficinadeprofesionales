@@ -38,9 +38,9 @@ if (isset($_POST['offer_submit'])) {
 
         $offer_name = $_POST["offer_name"];
         $offer_description = addslashes($_POST["offer_description"]);
-        $offer_price = $_POST["offer_price"];
-        $offer_discount = $_POST["offer_discount"];
-        $offer_warranty = $_POST["offer_warranty"];
+        $offer_price = (isset($_POST["offer_price"]) && $_POST["offer_price"] != "") ? $_POST["offer_price"] : 0;
+        $offer_discount = (isset($_POST["offer_discount"]) && $_POST["offer_discount"] != "") ? $_POST["offer_discount"] : 0;
+        $offer_warranty = (isset($_POST["offer_warranty"]) && $_POST["offer_warranty"] != "") ? $_POST["offer_warranty"] : 0;
         $offer_tags = $_POST["offer_tags"];
 
         $offer_name_slug = generar_texto_amigable($offer_name);

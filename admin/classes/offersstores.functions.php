@@ -5,7 +5,7 @@ function getAllOffersStores()
 
     global $conn;
 
-    $sql = "SELECT * FROM " . TBL . "offers_stores ORDER BY offer_cdt ASC";
+    $sql = "SELECT * FROM " . TBL . "offers_stores ORDER BY offer_cdt DESC";
 
     $rs = mysqli_query($conn, $sql);
 
@@ -46,7 +46,7 @@ function getAllOffersByStore($store_id)
 
     global $conn;
 
-    $sql = "SELECT * FROM " . TBL . "offers_stores WHERE store_id = ".$store_id." ORDER BY offer_cdt ASC";
+    $sql = "SELECT * FROM " . TBL . "offers_stores WHERE store_id = ".$store_id." ORDER BY offer_cdt DESC";
 
     $rs = mysqli_query($conn, $sql);
 
@@ -59,7 +59,7 @@ function getCountAllOffersByStore($store_id)
 {
     global $conn;
 
-    $sql = "SELECT * FROM " . TBL . "offers_stores  WHERE store_id = ".$store_id;
+    $sql = "SELECT * FROM " . TBL . "offers_stores INNER  WHERE store_id = ".$store_id;
 
     $rs = mysqli_query($conn, $sql);
 
