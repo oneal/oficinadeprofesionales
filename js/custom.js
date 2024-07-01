@@ -1,6 +1,6 @@
 var dir = '';
-if(window.location.origin == 'http://localhost'){
-    dir = '/oficinad/';
+if(window.location.origin == 'http://oficinad.test:5000'){
+    dir = '/';
 }else if(window.location.origin == 'https://www.oficinadeprofesionales.com'){
     dir = '/';
 }

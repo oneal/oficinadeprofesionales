@@ -5,11 +5,11 @@
       <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-css-parser/lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-css-parser/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-font-lib/src/FontLib" isTestSource="false" packagePrefix="FontLib\" />
-      <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-font-lib/tests/FontLib" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-svg-lib/src/Svg" isTestSource="false" packagePrefix="Svg\" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-svg-lib/tests/Svg" isTestSource="true" packagePrefix="Svg\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/src" isTestSource="false" packagePrefix="Dompdf\" />
-      <sourceFolder url="file://$MODULE_DIR$/dompdf/tests" isTestSource="true" packagePrefix="Dompdf\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-font-lib/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/dompdf/lib/php-svg-lib/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/tests" isTestSource="true" packagePrefix="Dompdf\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/dompdf/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/dompdf/vendor/composer" />
