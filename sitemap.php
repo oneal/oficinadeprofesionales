@@ -208,5 +208,16 @@ if ($users->num_rows > 0) {
     }
 }
 
+$offers = getAllOffersStores();
+if ($offers->num_rows > 0) {
+    foreach($offers as $offer) {
+        echo "<url>
+                <loc>".$webpage_full_link."oferta-almacen/".$offer['offer_slug']."</loc>
+                <changefreq>weekly</changefreq>
+                <priority>0.8</priority>
+            </url>";
+    }
+}
+
 // Cierre de la etiqueta del archivo XML del Sitemap
 echo "</urlset>";

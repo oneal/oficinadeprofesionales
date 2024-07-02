@@ -2270,6 +2270,29 @@ div#event_detail_enq_success p{
     overflow: hidden;
     display: block;
 }
+
+.eve-box div.offer-data span.offer-price {
+    padding: 6px;
+    background: #aaa;
+    color:#fff;
+    margin-right: 10px;
+}
+
+.eve-box div.offer-data span.offer-discount {
+    padding: 6px;
+    background: #00c200;
+    color:#fff;
+    margin-right: 10px;
+}
+
+.eve-box div.offer-data span.offer-show {
+    background: #F44336;
+    color: #fff;
+    padding: 6px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .eve-box div:nth-child(2) p{
     margin: 0px;
     overflow: hidden;
@@ -2312,11 +2335,20 @@ div#event_detail_enq_success p{
 .eve-box div:nth-child(2) span.pho{
     padding-bottom: 0px;
 }
+
+
 .eve-box div:nth-child(3){
     width: 100%;
     padding: 15px 25px 15px 25px;
     border-top: 1px solid #efefef;
 }
+
+.eve-box div.offer-data{
+    width: 100%;
+    padding: 0 0 0 0;
+    border-top: 1px solid #efefef;
+}
+
 .text-store {
     padding-left: 0;
     display: block !important;
@@ -2920,6 +2952,20 @@ div#event_detail_enq_success p{
 .all-list-sh .eve-box{
     margin: 10px 15px;
 }
+
+.all-list-sh .al-img2 a img{
+    height: 206px;
+}
+.all-list-sh .al-img2 .auth img{
+    height: 36px;
+}
+.all-list-sh .al-img2{
+    float: left;
+    width: 30%;
+    position: relative;
+    text-align: center;
+}
+
 .all-list-sh .al-img a img{
     height: 206px;
 }
@@ -2965,10 +3011,23 @@ div#event_detail_enq_success p{
     font-size: 14px;
     color: #333;
 }
+
+.all-list-sh .eve-box div:nth-child(2) span.store-city{
+    float: none;
+    font-size: 12px;
+    color: #333;
+}
+
 .all-list-sh .eve-box div:nth-child(2) span:nth-child(1){
     float: initial;
     font-size: 13px;
 }
+
+.all-list-sh .eve-box div.offer-data span{
+    float: left !important;
+    font-size: 13px !important;
+}
+
 .all-list-sh .eve-box div:nth-child(2) span:nth-child(2){
 }
 .all-list-sh .eve-box div:nth-child(2) span:nth-child(3){}
@@ -3030,6 +3089,7 @@ div#event_detail_enq_success p{
     overflow: hidden;
     white-space: pre;
 }
+
 .all-list-sh .eve-box div:nth-child(2) h4 a {
     color: #212529;
     float: left;
@@ -3521,24 +3581,46 @@ width: 36px !important;
     width: 100%;
 }
 
-.offer-price {
+.offerbuy {
+    background: #ffc890;
+    color: #fff;
     padding: 6px;
-    background: #aaa;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.offerbuy:hover {
     color:#fff;
 }
 
-.offer-discount {
-    padding: 6px;
-    background: #00c200;
-    color:#fff;
+.shipping-by {
+    font-weight: 700;
+    font-size: 16px;
 }
 
-.offer-show {
+.shipping-by span {
+    float: right;
+}
+
+.shipping-by .show-store {
     background: #F44336;
     color: #fff;
     padding: 6px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.shipping-by .show-store a {
+    color: #fff;
+}
+
+.shipping-by .show-store a:hover {
+    color: #fff;
 }
 
 .offer-show a {
@@ -3553,12 +3635,20 @@ width: 36px !important;
 }
 
 .offer-price-details {
+    color:#a0a0a0;
     font-size: 20px;
     margin-right: 20px;
 }
 
 .offer-discount-details {
     color: #00947a;
+    margin-right: 20px;
+}
+
+.offer-price-discount-details {
+    font-size: 20px;
+    color: red;
+    margin-right: 20px;
 }
 
 .pg-list-ser ul li h4 {
@@ -6868,6 +6958,9 @@ background: #F44336;
 .us-ppg-follow{
     display: none;
 }
+.us-ppg-offers{
+    display: none;
+}
 .us-pro-sec-3{
 }
 .us-pro-sec-4{
@@ -9985,6 +10078,10 @@ span.email-destacado:before {
     .eve-box div:nth-child(3){
         display:none;
     }
+    .eve-box div.offer-data{
+        display:block;
+        margin-top:10px;
+    }
     .list-pg-lt {
         width: 100%;
     }
@@ -10250,7 +10347,10 @@ span.email-destacado:before {
         display:none;
     }
     .all-list-sh .eve-box div:nth-child(2) .links a:nth-child(2), .all-list-sh .eve-box div:nth-child(2) .links a:nth-child(3){display:none;}
-    .all-list-sh .eve-box div:nth-child(2) .links{padding-top: 0px;}
+    .eve-box div:nth-child(2) span.offer-discount {display:block;}
+    .eve-box div:nth-child(2) span.offer-price {display:block;}
+    .eve-box div:nth-child(2) span.offer-show {display:block;}
+    .eve-box div:nth-child(2) .links{padding-top: 0px;}
     .dmact .top-ser{display:none !important;}
     .ban-search ul li.sr-cit {
         width: 30%;
@@ -10320,6 +10420,14 @@ span.email-destacado:before {
     .eve-box div:nth-child(1) img{
         height:150px;
     }
+
+    .all-list-sh .al-img2 a img{
+        height: auto;
+        max-width: 100%;
+        float: none;
+        object-fit: inherit;
+    }
+
     .home-tit{
         padding-top:70px;
     }
@@ -10404,6 +10512,11 @@ span.email-destacado:before {
     .all-list-sh .eve-box div:nth-child(2) span{
         display:none;
     }
+
+    .all-list-sh .eve-box div.offer-data span.offer-discount {display:block; margin-top: 10px;}
+    .all-list-sh .eve-box div.offer-data span.offer-price {display:block; margin-top: 10px;}
+    .all-list-sh .eve-box div.offer-data span.offer-show {display:block; margin-top: 10px;}
+
     .eve-box div:nth-child(2) {
         padding: 15px;
     }
@@ -11071,6 +11184,22 @@ span.email-destacado:before {
         margin: 0px 0px 15px 0px;
     }
     .comity-all-user ul li {width: 100%;}
+
+    .shipping-by span {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .eve-box div.offer-data{
+        margin-top:60px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .eve-box div.offer-data{
+        margin-top:150px;
+    }
 }
 
 .demo .home-city ul li{width:33.3333%;}

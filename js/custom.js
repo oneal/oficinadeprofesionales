@@ -145,10 +145,38 @@ $(document).ready(function () {
         $('.us-pro-nav ul li span').removeClass('act');
         $(this).addClass('act');
     });
-    $('.us-pro-nav ul li:nth-child(1) span').on('click', function () {
-        $('.us-ppg-com').slideUp();
-        $('.us-ppg-listings').slideDown();
-    });
+
+
+    if($('.us-ppg-com').hasClass( "us-ppg-listings" ) && $('.us-ppg-com').hasClass( "us-ppg-offers" ) && $('.us-ppg-com').hasClass( "us-ppg-follow" )) {
+        $('.us-pro-nav ul li:nth-child(1) span').on('click', function () {
+            $('.us-ppg-com').slideUp();
+            $('.us-ppg-listings').slideDown();
+        });
+        $('.us-pro-nav ul li:nth-child(2) span').on('click', function () {
+            $('.us-ppg-com').slideUp();
+            $('.us-ppg-offers').slideDown();
+        });
+
+        $('.us-pro-nav ul li:nth-child(3) span').on('click', function () {
+            $('.us-ppg-com').slideUp();
+            $('.us-ppg-follow').slideDown();
+        });
+    } else {
+        if($('.us-ppg-com').hasClass( "us-ppg-listings" ) && $('.us-ppg-com').hasClass( "us-ppg-follow" )) {
+            $('.us-pro-nav ul li:nth-child(1) span').on('click', function () {
+                $('.us-ppg-com').slideUp();
+                $('.us-ppg-listings').slideDown();
+            });
+
+            $('.us-pro-nav ul li:nth-child(2) span').on('click', function () {
+                $('.us-ppg-com').slideUp();
+                $('.us-ppg-follow').slideDown();
+            });
+        }
+    }
+
+
+
 //    $('.us-pro-nav ul li:nth-child(2) span').on('click', function () {
 //        $('.us-ppg-com').slideUp();
 //        $('.us-ppg-listings').slideDown();
@@ -161,10 +189,7 @@ $(document).ready(function () {
 //        $('.us-ppg-com').slideUp();
 //        $('.us-ppg-event').slideDown();
 //    });
-    $('.us-pro-nav ul li:nth-child(2) span').on('click', function () {
-        $('.us-ppg-com').slideUp();
-        $('.us-ppg-follow').slideDown();
-    });
+
     //SERVICES LIST ADD - APPEND
     $(".lis-ser-add-btn").on('click', function () {
         if($('.item-service').length>=1 && $('.item-service').length<=7){

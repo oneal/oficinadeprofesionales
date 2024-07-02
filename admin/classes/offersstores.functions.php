@@ -18,7 +18,7 @@ function getAllOffersStoresUser($user_id)
 
     global $conn;
 
-    $sql = "SELECT * FROM " . TBL . "offers_stores WHERE user_id = ".$user_id." ORDER BY offer_cdt ASC";
+    $sql = "SELECT * FROM " . TBL . "offers_stores WHERE user_id = ".$user_id." ORDER BY offer_cdt DESC";
 
     $rs = mysqli_query($conn, $sql);
 
