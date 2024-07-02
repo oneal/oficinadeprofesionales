@@ -2234,6 +2234,17 @@ div#event_detail_enq_success p{
     transition: all 0.5s ease;
     cursor: pointer;
 }
+
+.eve-box div.al-img2 img{
+    width: 100%;
+    float: none;
+    object-fit: cover;
+    height: 250px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    max-width: 206px;
+}
+
 .eve-box div:nth-child(1) span{
     position: absolute;
     background: #51c0ff;
@@ -10918,6 +10929,10 @@ span.email-destacado:before {
     .log-bot ul li {
         padding: 0px 4px;
     }
+
+    .eve-box div.offer-data{
+        margin-top:70px;
+    }
 }
 @media screen and (max-width:480px){
     .land-pack ul li {
@@ -11172,6 +11187,10 @@ span.email-destacado:before {
         width: 100%;
     }
     .all-list-sh .links{display:none;}
+
+    .eve-box div.offer-data{
+        margin-top:60px;
+    }
 }
 @media screen and (max-width:420px){
     .pmenu-cat ul li, .pmenu-eve ul li{
@@ -11192,7 +11211,7 @@ span.email-destacado:before {
     }
 
     .eve-box div.offer-data{
-        margin-top:60px;
+        margin-top:110px;
     }
 }
 
