@@ -59,7 +59,7 @@ function getCountAllOffersByStore($store_id)
 {
     global $conn;
 
-    $sql = "SELECT * FROM " . TBL . "offers_stores INNER  WHERE store_id = ".$store_id;
+    $sql = "SELECT * FROM " . TBL . "offers_stores WHERE store_id = ".$store_id;
 
     $rs = mysqli_query($conn, $sql);
 
