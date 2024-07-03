@@ -2987,7 +2987,6 @@ div#event_detail_enq_success p{
     float: left;
     width: 30%;position: relative;
 }
-.all-list-sh .al-img:before{content:'';position: absolute;width: 100%;height:100%;background: #2432405e;left: 0px;transition: all ease 0.5s;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to bottom, #ffffff00, #0b253aba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
 .all-list-sh .al-img .auth{padding-left: 0px;position: absolute;left: 15px;bottom: 15px;padding: 0px;width: auto;}
 .all-list-sh .al-img .auth img{
     width: 36px;
@@ -3646,19 +3645,19 @@ width: 36px !important;
 }
 
 .offer-price-details {
-    color:#a0a0a0;
-    font-size: 20px;
+    color:#aaa;
+    font-size: 15px;
     margin-right: 20px;
 }
 
 .offer-discount-details {
-    color: #00947a;
+    color: red;
     margin-right: 20px;
 }
 
 .offer-price-discount-details {
+    color: #00947a;
     font-size: 20px;
-    color: red;
     margin-right: 20px;
 }
 
@@ -4470,8 +4469,27 @@ background: #F44336;
     box-shadow: 0 0 0 rgb(244, 67, 54);
 }
 .list-ban-btn ul li span.pulse:before{color: #fff;}
-.list-ban-btn ul li span:before{
+
+.list-ban-btn ul li span.pulse2{
+    background: #f44336;
+    color: #ffffff;
+    border: 1px solid #f44336;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 0 rgb(244, 67, 54);
+    padding: 10px 10px 10px 10px !important;
+    text-align: center !important;
 }
+.list-ban-btn ul li span.pulse2 a{
+    color: #fff;
+}
+.list-ban-btn ul li span.pulse2 a:hover{
+    color: #fff;
+}
+.list-ban-btn ul li span.pulse2:before{
+    color: #fff;
+    content: none !important;
+}
+
 .list-ban-btn ul li span:hover:before{
     color: #ffffff;
 }
