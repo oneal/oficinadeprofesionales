@@ -157,6 +157,17 @@ if ($categories->num_rows > 0) {
     }
 }
 
+$stores = getAllStoresWithoutOffer();
+if ($stores->num_rows > 0) {
+    foreach($stores as $store) {
+        echo "<url>
+                <loc>".$webpage_full_link."almacen/".$store['store_slug']."</loc>
+                <changefreq>weekly</changefreq>
+                <priority>0.8</priority>
+            </url>";
+    }
+}
+
 echo "<url>
         <loc>".$webpage_full_link."eventos</loc>
         <changefreq>weekly</changefreq>
