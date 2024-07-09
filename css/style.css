@@ -1027,9 +1027,13 @@ div#event_detail_enq_success p{
     transition: all 0.5s ease;
     width: 100%;
     height: 100%;
-    margin-top: 10px
 
 }
+
+.filter_submit_top {
+    margin-top: 10px
+}
+
 .ban-search ul li input[type="submit"]:hover{
     transition: all 0.5s ease;
     background: #0291d2;
@@ -3584,7 +3588,15 @@ width: 36px !important;
 .pg-list-ser-p1:before {
     content: '';
     position: absolute;
-    background:linear-gradient(to top,#43323eeb,#c3697e00 100%);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.pg-list-ser-p3:before {
+    content: '';
+    position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -3680,6 +3692,26 @@ width: 36px !important;
     height: 150px;
     object-fit: cover;
 }
+
+.pg-list-ser-p3 {
+    position: relative;
+    overflow: hidden;
+    height: 206px;
+    text-align: center;
+}
+.pg-list-ser-p3:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.pg-list-ser-p3 img {
+    transition: all .5s ease;
+    max-height: 206px;
+    object-fit: cover;
+    width: auto;
+}
+
 .pg-list-ser-p2 {
     text-align: center;
     max-width: 99%;
@@ -10376,6 +10408,8 @@ span.email-destacado:before {
         display:none;
     }
     .all-list-sh .eve-box div:nth-child(2) .links a:nth-child(2), .all-list-sh .eve-box div:nth-child(2) .links a:nth-child(3){display:none;}
+    .all-list-sh .eve-box div:nth-child(2) .links.displa-block-link a:nth-child(2), .all-list-sh .eve-box div:nth-child(2) .links.displa-block-link a:nth-child(3){display: block;}
+
     .eve-box div:nth-child(2) span.offer-discount {display:block;}
     .eve-box div:nth-child(2) span.offer-price {display:block;}
     .eve-box div:nth-child(2) span.offer-show {display:block;}
@@ -11205,6 +11239,10 @@ span.email-destacado:before {
         width: 100%;
     }
     .all-list-sh .links{display:none;}
+    .all-list-sh .links.displa-block-link{
+        display:block !important;
+        margin-top: 30px
+    }
 
     .eve-box div.offer-data{
         margin-top:60px;
@@ -11236,6 +11274,10 @@ span.email-destacado:before {
 @media screen and (max-width:320px){
     .eve-box div.offer-data{
         margin-top:150px;
+    }
+
+    .all-list-sh .links.displa-block-link{
+        margin-top: 50px
     }
 }
 

@@ -122,7 +122,7 @@ function getOfferStoresRelated($category_id, $store_id)
     if($countOffers == 1){
         $offest = 0;
     } else {
-        if($offestTemp == 5) {
+        if($countOffers <= 5) {
             $offest = 0;
         } else {
             if($offestTemp + 5 > $countOffers){
