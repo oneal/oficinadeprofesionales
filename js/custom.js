@@ -1,5 +1,8 @@
 var dir = '';
-if(window.location.origin == 'http://oficinad.test:5000'){
+
+console.log(window.location.origin);
+if(window.location.origin == 'http://oficinad.test'){
+    console.log("hola");
     dir = '/';
 }else if(window.location.origin == 'https://www.oficinadeprofesionales.com'){
     dir = '/';
